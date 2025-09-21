@@ -19,3 +19,6 @@ jobs:
 
         - name: ASCII artwork
           run: cowsay -f dragon "Run for cover, I am a DRAGON....RAWR" >> dragon.txt
+
+        - name: view file
+          run: cat dragon.txt
