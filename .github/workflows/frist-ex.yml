@@ -8,7 +8,7 @@ jobs:
           run: echo My first GHA job
 
         - name: checkout repo
-          uses: actions/checkout@v5  
+          uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 
 
         - name: list file
           run: ls
