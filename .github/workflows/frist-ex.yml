@@ -4,14 +4,16 @@ jobs:
     first_job:
         runs-on: ubuntu-latest
         steps:
-        - name: welcome message
-          run: echo My first GHA job
 
         - name: checkout repo
           uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 
 
-        - name: list file
-          run: ls
-
-        - name: read ile
-          run: cat README.md
+        - name: welcome message
+          run: |
+            echo My first GHA job
+            ls -ltra
+            cat README.md
+        
+        - name: ASCII artwork
+          run: cowsay -f dragon "Run for cover, I am a DRAGON....RAWR" >> dragon.txt
+          
